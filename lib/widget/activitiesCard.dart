@@ -11,10 +11,18 @@ class activityCard extends StatelessWidget {
   activityCard({this.ac});
 
 
+
   @override
   Widget build(BuildContext context) {
     double c_width = MediaQuery.of(context).size.width*0.95;
     double c_height = MediaQuery.of(context).size.height*0.25;
+    int a = int.parse(ac.modulesCompleted.split("/")[0]);
+    int b = int.parse(ac.modulesCompleted.split("/")[1]);
+    bool full = false;
+    if(a == b){
+      full = true;
+    }
+
 
     return Container(
       height: c_height,
@@ -46,7 +54,7 @@ class activityCard extends StatelessWidget {
                             SizedBox(width: 10,),
                             Row(
                               children: [
-                                Icon(Icons.star_outline_rounded, size: 16, color: companyColors().yellow),
+                                Icon((full ? Icons.star : Icons.star_outline_rounded), size: 16, color: companyColors().yellow),
                                 Text(ac.points.toString() + "pts", style: TextStyle(color: companyColors().yellow, fontSize: 12))
                               ],
                             ),
@@ -62,7 +70,7 @@ class activityCard extends StatelessWidget {
                             currentStep: int.parse(ac.modulesCompleted.split("/")[0]),
                             size: 6,
                             padding: 0,
-                            selectedColor: companyColors().lightPurple,
+                            selectedColor: (full ? companyColors().bluegreen : companyColors().lightPurple),
                             unselectedColor: companyColors().lightGrey,
                             roundedEdges: Radius.circular(10),
 
