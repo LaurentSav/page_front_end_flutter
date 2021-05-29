@@ -28,7 +28,10 @@ class MyApp extends StatelessWidget {
                   padding: EdgeInsets.only(top: 25, bottom: 25),
                   child: Text("ACTIVITIES", style: TextStyle(color: Colors.white, fontSize: 14)),
                 ),
-                Expanded(child: activitylistpage())
+                Expanded(child: ClipRRect(
+                  borderRadius: BorderRadius.only(topLeft: Radius.circular(30), topRight: Radius.circular(30)),
+                  child: activitylistpage()),
+                )
               ],
             ),
           )
