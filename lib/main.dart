@@ -17,11 +17,21 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(fontFamily: 'Raleway'),
+      theme: ThemeData(fontFamily: 'Lato'),
       home: Scaffold(
         body:
-         activitylistpage()
-
+          Container(
+            color: companyColors().deepPurple,
+            child: Column(
+              children: [
+                Container(
+                  padding: EdgeInsets.only(top: 25, bottom: 25),
+                  child: Text("ACTIVITIES", style: TextStyle(color: Colors.white, fontSize: 14)),
+                ),
+                Expanded(child: activitylistpage())
+              ],
+            ),
+          )
     ));
   }
 }

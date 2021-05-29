@@ -80,3 +80,8 @@ flutter:
 
   assets:
     - assets/
+
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato/Lato-Regular.ttf
