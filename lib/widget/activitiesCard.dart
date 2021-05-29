@@ -14,6 +14,7 @@ class activityCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     double c_width = MediaQuery.of(context).size.width*0.95;
     double c_height = MediaQuery.of(context).size.height*0.25;
     int a = int.parse(ac.modulesCompleted.split("/")[0]);
@@ -28,6 +29,7 @@ class activityCard extends StatelessWidget {
       height: c_height,
       width: c_width,
       child: Card(
+        elevation: 0.25,
         child: Padding(
           padding: EdgeInsets.only(top: 10, bottom: 8),
           child: Row(

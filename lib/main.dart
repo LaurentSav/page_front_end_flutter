@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_technique/data/companyColors.dart';
 import 'package:test_technique/pages/activitylistpage.dart';
 import 'package:test_technique/widget/activitiesCard.dart';
 import 'package:test_technique/data/activityData.dart';
@@ -18,19 +19,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(fontFamily: 'Raleway'),
       home: Scaffold(
-        appBar: AppBar(
-        title: Text('Flutter Demo'),
-      ),
-        body: Container(
-          child: ListView.builder(
-              padding: const EdgeInsets.all(2),
-              itemCount: activities.length,
-              itemBuilder: (BuildContext ctx, int index){
-            return activityCard(
-              ac: activities[index]
-            );
-          })
-        )
+        body:
+         activitylistpage()
+
     ));
   }
 }
