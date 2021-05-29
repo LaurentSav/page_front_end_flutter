@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
             color: companyColors().deepPurple,
             child: Column(
               children: [
+
                 Container(
                   padding: EdgeInsets.only(top: 25, bottom: 25),
                   child: Text("ACTIVITIES", style: TextStyle(color: Colors.white, fontSize: 14)),

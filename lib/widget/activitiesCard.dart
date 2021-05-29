@@ -16,7 +16,7 @@ class activityCard extends StatelessWidget {
   Widget build(BuildContext context) {
 
     double c_width = MediaQuery.of(context).size.width*0.95;
-    double c_height = MediaQuery.of(context).size.height*0.25;
+    double c_height = MediaQuery.of(context).size.height*0.26;
     int a = int.parse(ac.modulesCompleted.split("/")[0]);
     int b = int.parse(ac.modulesCompleted.split("/")[1]);
     bool full = false;
