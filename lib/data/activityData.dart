@@ -6,7 +6,7 @@ class activityData{
     return [
       activity(
         title: "Master your passwords",
-        image: "assets/image-of-your-choice.jpg",
+        image: "assets/image1.jpg",
         type: "Training",
         tags: "Identification / Digital identity",
         points: 35,
@@ -15,7 +15,7 @@ class activityData{
       ),
       activity(
         title: "Protect personal data",
-        image: "assets/image-of-your-choice.jpg",
+        image: "assets/image2.jpg",
         type: "Training",
         tags: "Protection / Gdpr",
         points: 35,
@@ -24,7 +24,7 @@ class activityData{
       ),
       activity(
         title: "Harden your social profiles",
-        image: "assets/image-of-your-choice.jpg",
+        image: "assets/image2.jpg",
         type: "Checkup",
         tags: "Social network / Privacy",
         points: 10,
@@ -33,16 +33,16 @@ class activityData{
       ),
       activity(
         title: "Do your part against ransomwares",
-        image: "assets/image-of-your-choice.jpg",
+        image: "assets/image1.jpg",
         type: "Checkup",
-        tags: "Social engineering / Phishing / Vishing",
+        tags: "Social engineering / Phishing / Vishing ffffffffffffffff",
         points: 10,
         duration: "5min",
         modulesCompleted: "4/4",
       ),
       activity(
         title: "Software updates and installs at home",
-        image: "assets/image-of-your-choice.jpg",
+        image: "assets/image1.jpg",
         type: "Quiz",
         tags: "Update / Software",
         points: 15,
@@ -51,7 +51,7 @@ class activityData{
       ),
       activity(
         title: "Protect your browser at home",
-        image: "assets/image-of-your-choice.jpg",
+        image: "assets/image1.jpg",
         type: "Quiz",
         tags: "Protection / Update",
         points: 15,
